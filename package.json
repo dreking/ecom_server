@@ -1,0 +1,31 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "Leandre Nsengumuremyi <leajapo@gmail.com> (https://github.com/dreking)",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-async-errors": "^3.1.1",
+        "express-validator": "^6.12.1",
+        "helmet": "^4.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "mongoose": "^5.13.7",
+        "morgan": "^1.10.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0"
+    }
+}
