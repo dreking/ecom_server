@@ -2,7 +2,7 @@ const { Types, model, Schema } = require('mongoose');
 
 const OrderSchema = new Schema(
     {
-        userid: { type: Types.ObjectId, required: true },
+        userid: { type: Types.ObjectId, required: true, ref: 'User' },
         products: [
             {
                 id: { type: Number, required: true },

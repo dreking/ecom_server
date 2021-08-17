@@ -15,6 +15,8 @@ exports.postPlaceOrder = async (req, res) => {
         total: total,
     });
 
+    await order.populate('userid', '-password').execPopulate();
+
     return res.status(201).json({
         status: true,
         message: 'Order placed',
